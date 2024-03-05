@@ -3,8 +3,8 @@ pipeline{
   stages{
     stage('Build'){
       steps {
-        // build 'PES1UG21CS722-1'
-        sh 'g++ main.cpp -o output'
+        build 'PES1UG21CS722-1'
+        sh 'g++ in.cpp -o output'
       }
     }
      stage('Test'){
